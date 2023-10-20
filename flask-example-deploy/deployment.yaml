@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
       - image: mannmae/react
-        name: flask-example
+        name: react
