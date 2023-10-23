@@ -5,18 +5,3 @@ metadata:
   labels:
     app: flask
   name: flask
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: flask
-  strategy: {}
-  template:
-    metadata:
-      creationTimestamp: null
-      labels:
-        app: flask
-    spec:
-      containers:
-      - image: gasbugs/flask-example
-        name: flask-example
