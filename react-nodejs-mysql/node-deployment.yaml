@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nodejs
   labels:
-    app: react-nodejs-mysql
+    app: nodejs
 spec:
   ports:
     - port: 80
@@ -29,9 +29,9 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-nodejs-mysql
+  name: nodejs
   labels:
-    app: react-nodejs-mysql
+    app: nodejs
 spec:
   selector:
     matchLabels:
