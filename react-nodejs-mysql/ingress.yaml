@@ -6,17 +6,17 @@ spec:
   rules:
     - http:
       paths:
-        - path: /*
-          pathType: ImplementationSpecific
-          backend:
-            service:
-              name: react
-              port:
-                number: 80
-        - path: /api/*
-          pathType: ImplementationSpecific
-          backend:
-            service:
-              name: nodejs
-              port:
-                number: 80
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: react
+            port:
+              number: 80
+      - path: /api/*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: nodejs
+            port:
+              number: 80
