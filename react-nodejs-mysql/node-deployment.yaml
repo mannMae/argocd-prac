@@ -40,7 +40,7 @@ spec:
   strategy:
     type: Recreate
   template:
-    metadate:
+    metadata:
       labels:
         app: nodejs
         tier: backend
