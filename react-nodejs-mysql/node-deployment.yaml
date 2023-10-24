@@ -9,7 +9,7 @@ spec:
     - port: 80
       targetPort: 8080
   selector:
-    app: react-nodejs-mysql
+    app: nodejs
     tier: backend
   type: LoadBalancer
 ---
@@ -35,14 +35,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: react-nodejs-mysql
+      app: nodejs
       tier: backend
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: react-nodejs-mysql
+        app: nodejs
         tier: backend
     spec:
       containers:
