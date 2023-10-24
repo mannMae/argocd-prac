@@ -35,14 +35,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: react-nodejs-mysql
+      app: nodejs
       tier: backend
   strategy:
     type: Recreate
   template:
     metadate:
       labels:
-        app: react-nodejs-mysql
+        app: nodejs
         tier: backend
     spec:
       containers:
