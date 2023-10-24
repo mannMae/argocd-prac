@@ -10,7 +10,7 @@ spec:
       targetPort: 3000
   selector:
     app: react
-    type: frontend
+    tier: frontend
   type: LoadBalancer
 ---
 apiVersion: apps/v1

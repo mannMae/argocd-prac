@@ -8,7 +8,7 @@ spec:
         paths:
         - path: /*
           pathType: ImplementationSpecific
-          frontend:
+          backend:
             service:
               name: react
               port:
