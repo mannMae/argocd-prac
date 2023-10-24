@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: nodejs
   labels:
-    app: nodejs
+    app: react-nodejs-mysql
 spec:
   ports:
     - port: 80
       targetPort: 8080
   selector:
-    app: nodejs
+    app: react-nodejs-mysql
     tier: backend
   type: LoadBalancer
 ---
@@ -18,7 +18,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: nodejs-pv-claim
   labels:
-    app: nodejs
+    app: react-nodejs-mysql
 spec:
   accessModes:
     - ReadWriteOnce
@@ -31,18 +31,18 @@ kind: Deployment
 metadata:
   name: nodejs
   labels:
-    app: nodejs
+    app: react-nodejs-mysql
 spec:
   selector:
     matchLabels:
-      app: nodejs
+      app: react-nodejs-mysql
       tier: backend
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: nodejs
+        app: react-nodejs-mysql
         tier: backend
     spec:
       containers:
