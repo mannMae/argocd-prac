@@ -18,5 +18,5 @@ spec:
         app: flask
     spec:
       containers:
-      - image: gasbugs/flask-example
-        name: flask-example
+        - image: gasbugs/flask-example
+          name: flask-example
